@@ -9,8 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+        
+   <!-- Preload -->
+    <link rel="preload" href="styles/normalize.css" as="styles" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preload" href="styles/styles.css" as="styles">
     <link rel="stylesheet" href="styles/styles.css" />
+    
 </head>
 
 <body>
@@ -39,7 +44,7 @@
 
     <main class="contenedor">
         <h3 class="centrar-texto">Tres deliciosas recetas de Café</h3>
-        <img src="img/blog2.jpg" alt="imagen entrada">
+        <img src="img/blog2.jpg" alt="imagen entrada" loading="lazy">
         <p class="entrada_texto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis mauris ac nunc fermentum, vel
             accumsan risus venenatis. Cras bibendum accumsan ipsum, ac finibus felis sollicitudin porttitor. Aliquam

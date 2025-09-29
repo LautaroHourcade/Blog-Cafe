@@ -7,9 +7,12 @@
     <title>Blog-cafe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <!-- Preload -->
+    <link rel="preload" href="styles/normalize.css" as="styles" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preload" href="styles/styles.css" as="styles">
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
@@ -41,7 +44,7 @@
         <h3 class="centrar-texto">Sobre Nosotros</h3>
         <div class="sobre-nosotros">
             <div class="sobre-nosotros__imagen">
-                <img src="img/nosotros.jpg" alt="imagen-nosotros">
+                <img src="img/nosotros.jpg" alt="imagen-nosotros" loading="lazy">
             </div>
             <div class="sobre-nosotros__texto">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, itaque ipsam at, incidunt qui
